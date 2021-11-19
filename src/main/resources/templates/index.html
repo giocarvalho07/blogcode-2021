@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+    <title> Giovanni de Carvalho - blog code </title>
+	<link rel="icon" type="image/x-icon" href="https://img.icons8.com/material-two-tone/24/000000/source-code.png"/>
+	        <!-- Font Awesome icons (free version)-->
+	<script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+	        <!-- Google fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+	        <!-- Core theme CSS (includes Bootstrap)-->
+	<link th:href="@{css/styles.css}" href="css/styles.css" rel="stylesheet" />		
+        
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&family=Open+Sans:wght@600&family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
+	
+	
+</head>
+	<body>
+
+    
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="/" style="font-family: 'Ubuntu';"> Giovanni de Carvalho </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/sobre"> Sobre </a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/post">Post</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/curso"> Curso</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/mensagem"> Contato </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header--> 
+        <header >            
+			<div class="col-md-12">
+				<img  style="height: 600px;" th:src="@{/assets/img/devCode.gif}" alt="" class="img-fluid card-img-top">
+			 </div>
+        </header>
+     
+     <br>
+     <br>    
+    <!-- Page content-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Post content-->
+                <article>
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1"> Seja muito bem vindo(a) ao meu blog!</h1>
+                        <!-- Post meta content-->
+                        
+                        <h2 class="fw-bolder mb-4 mt-5">Modelagem conceitual de dados - Técnicas de análise de dados</h2>
+                        <div class="text-muted fst-italic mb-2"> Postado em 2 de Maio de 2021 - Giovanni de Carvalho</div>
+                        <!-- Post categories-->
+                        <a class="badge bg-secondary text-decoration-none link-light" href="#!"> Modelagem de dados</a>
+                        <a class="badge bg-secondary text-decoration-none link-light" href="#!"> Sql </a>
+                    </header>
+                    <!-- Preview image figure-->
+                    <figure class="mb-4"><img class="img-fluid card-img-top" style="height: 500px;" th:src="@{/assets/img/devData.gif}" alt="..." /></figure>
+                    <!-- Post content-->
+                    <section class="mb-5">
+
+						
+                    
+                        <p class="fs-5 mb-4">
+                        	Introdução a técnica
+							Ajudar na investigação os processos:
+							1- Entender melhor as situações problemas;
+							2- Estruturar o banco de dados de forma adequada;
+							3- Ferramenta para o desenvolvimento de sistemas;
+							4- Permitir o compartilhamento de dados;
+							5- Organizar a integração dos sistemas e compartilhamento de informações;
+							6- Ferramenta para administração de dados;
+							7- Simplificar a visão da organização perante as informações;
+							8- Evitar problemas de redundância de dados;
+							
+                        </p>
+                        
+             			<h4 class="fw-bolder mb-4 mt-5"> Análise top down </h4>
+             			
+                        <p class="fs-5 mb-4">
+                        	Também conhecido como método de refinamento sucessivo. Esse método baseia-se na estratégia de dividir para conquistar o resultado. O problema é dividido em subproblemas (problemas menores) que podem ser mais fáceis de resolver. Com isso, você divide a situação-problema em situações de menor complexidade e soluciona uma de cada vez até atingir o objetivo.
+                        </p>
+                        
+             			<h4 class="fw-bolder mb-4 mt-5"> Análise de requisitos </h4>
+                        
+                        <p class="fs-5 mb-4">
+                        	Como vimos nos exemplos, o mesmo objeto pode gerar diversos pontos de vista. A mesma coisa acontece com a análise de sistemas. Para termos uma análise mais segura, temos de analisar o sistema a partir de pontos diferentes exemplos; Usuário; Negocio; Processo; O banco de dados é um conjunto de objetos que relacionam entre si de forma organizada. Os objetos que compõem o banco de dados podem ser, tabelas (de cliente, fornecedores, produtos, estoque), consultas, relatórios, etc
+                        </p>
+                            
+						<div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" target="_blank" href="https://giovannidecarvalhomendes.medium.com/modelagem-conceitual-de-dados-t%C3%A9cnicas-de-an%C3%A1lise-de-dados-bebc53ca078d">Continuar →</a></div>
+                                            
+                    </section>
+                </article>
+
+            </div>
+            <!-- Side widgets-->
+            <div class="col-lg-4">
+
+                <!-- Categories widget-->
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-light">Categories</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="/post">Api Rest</a></li>
+                                    <li><a href="/post">Banco de dados</a></li>
+                                    <li><a href="/post"> SpringBoot</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="/post"> Frontend </a></li>
+                                    <li><a href="/post">Java MVC</a></li>
+                                    <li><a href="/post">Tutotiais</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Side widget-->
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-light"> Sugestão </div>
+                    <div class="card-body"> Produzo tutoriais no Youtube, conteúdos diárias no Instagram, artigos no blog e parcerias com empresas de tecnologia </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+    
+    
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.youtube.com/channel/UCW26hCfDsPIsC9pOLPsarvw/videos">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.instagram.com/giovannidecarvalho_/">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a  target="_blank" href="https://github.com/giocarvalho07">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Giovanni de Carvalho</div>
+                    </div>
+                </div>
+            </div>
+        </footer>      
+
+ <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>       
+	
+	</body>
+</html>
